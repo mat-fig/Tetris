@@ -1,13 +1,17 @@
 import './App.css';
-import GridSquare from './components/GridSquare';
+import GridBoard from './components/GridBoard'
+import NextBlock from './components/NextBlock';
+import ScoreBoard from './components/ScoreBoard';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">TETRIS</h1>
+        <h1 className="App-title">TETR0</h1>
       </header>
-      <GridSquare color='5'/>
+      <GridBoard color='5'/>
+      <NextBlock/>
+      <ScoreBoard/>
     </div>
   );
 }
