@@ -12,7 +12,9 @@ import MessagePopup from './components/MessagePopup';
 
 const store = createStore(reducers)
 
+
 function App() {
+  
   return (
     <Provider store={store}>
       <div className="App">
