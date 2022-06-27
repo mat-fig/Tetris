@@ -1,9 +1,13 @@
 import React from "react"
+import { useSelector } from "react-redux"
+import { shapes } from "../utils"
 import GridSquare from "./GridSquare"
 
-const NextBlock = (props) => {
+export default function NextBlock (props) {
 
-    const box = [[0,0,0,0], [0,0,0,0], [0,0,0,0], [0,0,0,0]]
+    const nextShape = useSelector((state) => state.game.nextShape)
+    
+    const box = shapes[nextShape][0] 
 
     const grid = box.map((rows, i) => {
         return rows.map((square, j) => {
@@ -17,5 +21,3 @@ const NextBlock = (props) => {
         </div>
     )
 }
-
-export default NextBlock

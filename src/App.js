@@ -6,14 +6,15 @@ import reducers  from './reducers'
 import './App.css';
 import GridBoard from './components/GridBoard'
 import NextBlock from './components/NextBlock';
-import ScoreBoard from './components/ScoreBoard';
-import Controls from './components/Controls';
+import { ScoreBoard } from './components/ScoreBoard';
+import { Controls } from './components/Controls';
 import MessagePopup from './components/MessagePopup';
 
 const store = createStore(reducers)
 
 
 function App() {
+
   
   return (
     <Provider store={store}>
